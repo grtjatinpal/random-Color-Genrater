@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Color</title>
+    <link rel="stylesheet" href="randomColor.css">
+    <script src="randomColor.js" defer></script>
+
+    <style>
+        body>div {
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div><span>Developed by Jatin</span></div>
+    <div class="mainContainer">
+        <div class="colorBox">
+            <div id="p">
+                <span id="p1">Click on the code to copy it!</span>
+                <span id="p2" class="hide">Copy!</span>
+            </div>
+            <div class="box">
+                <div class="hex color">
+                    <button id="codeHEX" class="btn" onclick="handleCopy()">#ffffff</button>
+                    <button onclick="generateRandomHEX()" class="btn btnHEX" id="buttonHEX">Generate HEX</button>
+                </div>
+
+                <div class="rgb color">
+                    <button id="codeRGB" class="btn" onclick="handleCopy()">rgb(255, 255, 255)</button>
+                    <button onclick="generateRandomRGB()" class="btn btnRGB" value="buttonRGB">Generate RGB</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
